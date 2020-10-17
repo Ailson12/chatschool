@@ -1,0 +1,44 @@
+input, textarea {
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+input[type="submit"] {
+    width: auto;
+}
+
+textarea {
+    height: 170px;
+}
+
+/* Quando o input receber o focus essa regra css será aplicada */
+input:focus, textarea:focus {
+    /* 
+    O outline funciona igual ao border, tanto que a sintaxe é bem parecida. A diferença é que essas bordas se referem a quelas que o 
+    campo do input tem ao receber o focu 
+    */
+    outline: 1px solid #777;
+}
+
+
+
+.input-control {
+    position: relative;
+}
+
+.input-control label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+}
+
+.input-control input:focus ~ label, .input-control textarea:focus ~ label {
+    top: -25px;
+    font-size: 12px;
+    transition: ease .5s all;
+    opacity: 1;
+}

@@ -1,0 +1,37 @@
+h2 {
+    /* O valor uppercase transforma todas as letras em maiuscula */
+    text-transform: uppercase;
+    /* font-weight defini o 'negrito' da fonte. Neste caso definimos normal, Que é o normal rs */
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+}
+
+/* O seletor :before insere algo antes do conteúdo de cada elemento selecionado */
+/*
+    h2:before {
+        content: 'antes';
+        display: block;
+    }
+*/
+
+/* O seletor :after insere algo depois do conteúdo de cada elemento selecionado */
+h2:after {
+    content: '';
+    display: block;
+    background-color: rgb(130, 130, 130);
+    /* margin: cima, direito, baixo, esquerda */
+    /* auto na esquerda e na direita centraliza o elemento */
+    margin: 5px auto 10px auto;
+    width: 50px;
+    height: 2px;
+}
+
+.subtitle {
+    margin-bottom: 80px;
+}
+
+.text-left {
+    text-align: left;
+}

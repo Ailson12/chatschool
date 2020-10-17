@@ -1,0 +1,4 @@
+para minificar o css utilizamos precisamos do nodejs e do npm.
+após baixar essas ferramentas rode no terminal o comando: 
+    => npm install -g minifier
+O argumento -g irá instalar o pacote globalmente

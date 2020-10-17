@@ -1,0 +1,20 @@
+/* A propeiedade box-sizing nos permite incluir o preenchimento e a borda na largura e altura total de um elemento  */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    /* Margin da um espaçamento pro lado de fora */
+    /* Como especificamos 0, indica que nao havera nenhum espaçamento entre a tag a borda do navegador */
+    margin: 0;
+    /* padding da um espaçamento pro lado de dentro */
+    padding: 0;
+    font-size: 14px;
+}
+p {
+    margin: 10px 0 10px 0;
+}

@@ -1,0 +1,27 @@
+.btn {
+    background-color: rgb(84, 209, 84);
+    color: #ffffff;
+    /* 
+        Os métodos padding e border-radius só funcionam em tag de bloco. Por padrão a tag de ancora vem com
+        display: inline, de linha, logo não seria possivel colocar nem borda, nem espaçamento.
+    */
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: ease .5s all;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(84, 180, 84);
+}
+
+.btn.orange {
+    background-color: #fed136;
+}
+
+.btn.orange:hover {
+    background-color: black;
+}
